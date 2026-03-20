@@ -1,20 +1,20 @@
-# 🔐 Fullstack Auth System (Spring Boot + React + TypeScript + JWT)
+# 🔐 Fullstack Authentication System
 
-## 🚀 Live Project
+## 🚀 Live Demo
 
-🌐 Frontend: (after deployment)
-🌐 Backend API: (after deployment)
+* 🌐 Frontend: (add after deployment)
+* 🔗 Backend API: (add after deployment)
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
 
-A full-stack authentication system with **JWT-based security** and **Role-Based Access Control (RBAC)**.
+A full-stack authentication system built with **Spring Boot** and **React (TypeScript)** using **JWT-based authentication** and **Role-Based Access Control (RBAC)**.
 
-Supports:
+The system supports:
 
-* 👤 USER Dashboard
-* 🛠️ ADMIN Dashboard (view all users)
+* 👤 User Dashboard
+* 🛠️ Admin Dashboard (view all users)
 
 ---
 
@@ -22,18 +22,19 @@ Supports:
 
 ### 🔑 Authentication
 
-* Register & Login
-* JWT Token Authentication
-* Password Encryption (BCrypt)
+* User Registration & Login
+* Secure Password Encryption (BCrypt)
+* JWT Token-based Authentication
 
 ### 👤 User
 
-* Login & Logout
-* Personalized Dashboard
+* Login / Logout
+* Personalized dashboard UI
 
 ### 🛠️ Admin
 
-* View all users
+* View all registered users
+* Role-based access control
 * Admin dashboard with stats
 
 ---
@@ -42,13 +43,13 @@ Supports:
 
 ```bash
 auth_system/
- ├── backend/   # Spring Boot
- └── frontend/  # React + Vite + TypeScript
+ ├── backend/   # Spring Boot backend
+ └── frontend/  # React + TypeScript frontend
 ```
 
 ---
 
-## ⚙️ Run Locally
+## ⚙️ Local Setup
 
 ### Backend
 
@@ -56,6 +57,10 @@ auth_system/
 cd backend
 ./mvnw spring-boot:run
 ```
+
+Runs on: `http://localhost:8080`
+
+---
 
 ### Frontend
 
@@ -65,42 +70,49 @@ npm install
 npm run dev
 ```
 
+Runs on: `http://localhost:5173`
+
 ---
 
 ## 🔗 API Endpoints
 
-| Method | Endpoint           | Description |
-| ------ | ------------------ | ----------- |
-| POST   | /api/auth/register | Register    |
-| POST   | /api/auth/login    | Login       |
-| GET    | /api/admin/users   | Admin users |
+| Method | Endpoint           | Description           |
+| ------ | ------------------ | --------------------- |
+| POST   | /api/auth/register | Register user         |
+| POST   | /api/auth/login    | Login user            |
+| GET    | /api/admin/users   | Get all users (Admin) |
 
 ---
 
 ## 🧠 Tech Stack
 
-* Java + Spring Boot
-* Spring Security + JWT
-* MySQL
-* React + TypeScript
-* Axios
-* Bootstrap
+* **Backend:** Spring Boot, Spring Security, JWT
+* **Frontend:** React, TypeScript, Vite
+* **Database:** MySQL
+* **Others:** Axios, Bootstrap
 
 ---
 
-## 💡 Future Enhancements
+## 🔐 Roles
 
-* Charts & analytics 📊
-* Refresh tokens 🔄
-* Deployment ☁️
+* **USER** → Basic dashboard
+* **ADMIN** → Admin panel + user management
+
+---
+
+## 💡 Future Improvements
+
+* Charts & analytics dashboard 📊
+* Refresh token mechanism 🔄
+* Deployment & CI/CD ☁️
 
 ---
 
 ## 👩‍💻 Author
 
 **Jagruti Deore**
-GitHub: https://github.com/Jagruti2004deore
+🔗 GitHub: https://github.com/Jagruti2004deore
 
 ---
 
-⭐ If you like this project, give it a star!
+⭐ If you like this project, please give it a star!
